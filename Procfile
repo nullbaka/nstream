@@ -1,0 +1,1 @@
+web: gunicorn -c conf.py -k eventlet -w 1 app:app
