@@ -1,7 +1,7 @@
 document.getElementById("makeRoomBtn").addEventListener("click", makeNewRoom);
 document.getElementById("joinRoomBtn").addEventListener("click", requestToJoinRoom);
 
-const socket = io.connect('127.0.0.1:5000')
+const socket = io.connect('https://sastastream.herokuapp.com/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   host: 'playpeer.herokuapp.com',
